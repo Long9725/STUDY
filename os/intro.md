@@ -4,7 +4,7 @@
 1. [OS(Operating System)란?](#osoperating-system란)
 2. [역할](#역할)
 3. [목적](#목적)
-5. [References](#references)
+4. [References](#references)
 
 
 ## OS(Operating System)란?
