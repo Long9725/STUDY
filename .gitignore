@@ -1,0 +1,6 @@
+# debug result
+./algorithm/.vscode/*
+./algorithm/c/sorting/*.exe
+
+# image
+./os/image/*
