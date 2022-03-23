@@ -1,11 +1,10 @@
 ## 목차
 
-1. [OS(Operating System)란?](#osoperating-system란)
+1. [Kernel이란?](#kernel이란?)
 2. [역할](#역할)
-3. [목적](#목적)
-4. [References](#references)
+3. [References](#references)
 
-## Kernel란?
+## Kernel이란?
 OS의 핵심이 되는 컴퓨터 프로그램으로, 시스템의 모든 것을 완전히 통제한다.
 
 ## 역할
