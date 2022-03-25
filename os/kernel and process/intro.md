@@ -1,4 +1,3 @@
-
 ## 목차
 
 1. [OS(Operating System)란?](#osoperating-system란)
@@ -25,6 +24,7 @@ OS는 컴퓨터 시스템의 하드웨어, 소프트웨어적인 자원들을 �
 * Reliability
 * Energy efficiency
 * etc.
+
 여기서 처리능력(Throughput), 반환시간(Turn around time), 사용가능도(Availability), 신뢰도(Reliabilty)는 운영체제의 성능을 평가하는 기준이 된다.
 * Throughput - 일정 시간 내에 시스템이 처리하는 일의 양
 * Turn around time - 시스템에 작업을 의뢰한 시간부터 처리가 완료될 때까지 걸린 시간
@@ -33,5 +33,4 @@ OS는 컴퓨터 시스템의 하드웨어, 소프트웨어적인 자원들을 �
 -> 어떻게 측정하지?
 
 ## References
-* wiki: https://ko.wikipedia.org/wiki/%EC%BB%A4%EB%84%90_(%EC%BB%B4%ED%93%A8%ED%8C%85)
 * https://coding-factory.tistory.com/300

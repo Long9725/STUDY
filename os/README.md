@@ -7,7 +7,7 @@ Docker 기반 Linux 공부
 - [ ] Linux command 공부
 
 * Kernels and Processes
-  - [ ] Processors
+  - [x] Processors
   - [ ] Memory
   - [ ] I/O devices
 * Concurrency
