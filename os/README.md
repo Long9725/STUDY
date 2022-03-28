@@ -12,10 +12,10 @@ Docker 기반 Linux 공부
   - [ ] I/O devices
 * Concurrency
   - [ ] CPU and I/O Schedulling
-  - [ ] Virtual Memory
+  - [x] Virtual Memory
 * Memory Management
   - [ ] Threads
-  - [ ] Synchronization
+  - [ ] Synchronizations
 * Persistent Storage
   - [ ] Storage
   - [ ] File systems
