@@ -33,7 +33,7 @@
 </details>
 
 ### 메모리 공간
-![](../image/process/memory.png)
+![](../../image/process/memory.png)
 
 ## 프로세스의 상태
 커널 내의 자료 구조를 통해 프로세스의 상태를 관리한다. 준비 큐, 대기 큐, 실행 큐 등의 자료 구조가 있다.
@@ -43,7 +43,7 @@
 * 대기(waiting) : 보류(block)라고 부르기도 한다. 프로세스가 입출력 완료, 시그널 수신 등 어떤 사건을 기다리고 있는 상태를 말한다.
 * 종료(terminated) : 프로세스의 실행이 종료되었다.
 
-![](../image/process/process%20state%20transitions.png)
+![](../../image/process/process%20state%20transitions.png)
 
 
 ## 프로세스의 상태전이
