@@ -51,15 +51,15 @@ p, q, r은 p <= q <= r인 배열 요소의 index이다. P는 제일 작은 index
 
 ### Merge pseudocode
 
-    n<sub>1</sub> <- (q - p) + 1
-    n<sub>2</sub> <- (r - q)
-    create arrays L[1 ... n<sub>1</sub> + 1] and R[1 ... n<sub>2</sub> + 1]
-    for i <- 1 to n<sub>1</sub> do
+    n_1 <- (q - p) + 1
+    n_2 <- (r - q)
+    create arrays L[1 ... n_1 + 1] and R[1 ... n_2 + 1]
+    for i <- 1 to n_1 do
         L[i] <- A[(p + i) - 1]
-    for j <- 1 to n<sub>2</sub> do
+    for j <- 1 to n_2 do
         R[j] <- A[q + j]
-    L[n<sub>1</sub> + 1] <- ∞
-    R[n<sub>2</sub> + 1] <- ∞
+    L[n_1 + 1] <- ∞
+    R[n_2 + 1] <- ∞
     i <- 1
     j <- 1
     # 12-17 lines
@@ -126,8 +126,8 @@ p, q, r은 p <= q <= r인 배열 요소의 index이다. P는 제일 작은 index
 * L과 R 배열은 n<sub>1</sub> + n<sub>2</sub> + 2 개의 원소(+2는 sentinel)를 가진다.
 * 1, 2 라인으로부터 n<sub>1</sub> + n<sub>2</sub> = ((q-p) + 1) + (r-q) = (r-p) + 1 임을 알 수 있다. 이는 A의 원소 개수이다.
 ```
-    n<sub>1</sub> <- (q - p) + 1
-    n<sub>2</sub> <- (r - q)
+    n_1 <- (q - p) + 1
+    n_2 <- (r - q)
 ```
 
 </details>
