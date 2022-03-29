@@ -23,7 +23,7 @@
 ## Merge sort algorithm
 + 재귀와 분할-정복(divide and conquer) 기반한 정렬 방법이다. 재귀함수로 구성되어있다.
 
-![](../../image/sorting/merge-sort.png)
+![](../../image/sorting/merge-sort/merge-sort.png)
 
 + Divide
     1. 문제를 작은 여러 개의 문제로 나눈다.
@@ -135,12 +135,12 @@ p, q, r은 p <= q <= r인 배열 요소의 index이다. P는 제일 작은 index
 ## Analysis of divide and conquer in merge sort
 ### Setting
 * T(n)을 n 사이즈의 문제를 해결하는 실행 시간이라고 가정한다.
-* 문제가 충분히 작다면(n <= c), 바로 풀기 때문에 상수 시간이 걸리므로 θ(1)이다.
+* 문제가 충분히 작다면(n <= c, c는 constant time), 바로 풀기 때문에 상수 시간이 걸리므로 θ(1)이다.
 * 문제가 크다면, 그것을 1/m 개의 사이즈를 가지는 k 개의 부분 문제로 나눈다. Merge sort는 m과 k가 2이다.
 * D(n)은 문제를 부분 문제로 나누는 데 걸리는 시간이다.
 * C(n)은 부분 문제의 해결 방법을 원래 문제의 해결 방법으로 합치는데 걸리는 시간이다.
 
-![](../../image/sorting/divide-and-conquer.png)
+![](../../image/sorting/merge-sort/divide-and-conquer.png)
 
 ### Base case
 n = 1일 때
@@ -149,19 +149,19 @@ n = 1일 때
 * Conquer: Merge sort 함수를 2번 실행하므로, 각 함수는 1/2 크기의 부분 배열을 다룬다. 따라서 2T(n/2)이다.
 * Combine: n 개의 부분 배열을 합병하므로 C(n) = θ(n)이다.
 
-![](../../image/sorting/divide-and-conquer-1.png)
-![](../../image/sorting/divide-and-conquer-2.png)
+![](../../image/sorting/merge-sort/divide-and-conquer-1.png)
+![](../../image/sorting/merge-sort/divide-and-conquer-2.png)
 
 n = 2의 거듭제곱일 때
 * Dividie: log<sub>2</sub>n 번 반복
 * T(n) = 2T(n/2) + cn (c > 0)은 다음 과정을 거친다.
 
-![](../../image/sorting/divide-and-conquer-3.png)
-![](../../image/sorting/divide-and-conquer-4.png)
+![](../../image/sorting/merge-sort/divide-and-conquer-3.png)
+![](../../image/sorting/merge-sort/divide-and-conquer-4.png)
 
 ## Time complexity
 * Merge sort를 log<sub>2</sub>n + 1 번 호출한다.
-* 전체 비용은 cn(log<sub>2</sub>n + 1)이다.
+* 전체 비용은 c·n(log<sub>2</sub>n + 1)이다.
 * 따라서 θ(nlog<sub>2</sub>n)이다.
 
 ## 장단점
