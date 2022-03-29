@@ -12,18 +12,15 @@
 * Input: 배열 A[1 ... n]. 각 원소는 음수일 수 있다.
 * Output: 연속적인 A[i ... j]이 가장 큰 합을 가지는 인덱스 i, j와 max sum을 얻는다.
 
-Naive approach: θ(n<sup>2</sup>)
+Naive approach: θ(n<sup>2</sup>) \
 Divide-and-conquer: θ(nlog n)
 
 + Subproblem: A[low ... high]에서 최대 합을 찾는다. 원래 문제에서는 low = 1, high = n 이다.
-
 + Divide
     + 배열을 2개의 부분 배열로 나눈다.
     + mid 값을 구해 left = A[low ... mid], right = A[mid+1 ... high]로 나눈다.
-
 + Conquer
     + left와 right에서 maximum subarray를 찾는다.
-
 + Combine
     + Midpoint를 관통하며 생기는 maximum subarray를 찾는다.
     + left, midpoint, right 3개의 해결책 중 가장 좋은 해결책을 사용한다.
