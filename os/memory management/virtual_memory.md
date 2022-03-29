@@ -21,19 +21,19 @@ Swap file이라고도 한다. 디스크를 메모리처럼 활용할 때, 모든
 데이터의 크기를 무작위로 로드하고 언로드하면 메모리 공간에 fragmentation이 발생하기 때문이다.
 
 ### Fragmentation
-![](./image/virtual_memory/FragmentationDefragmentation.gif)
+![](../image/virtual_memory/FragmentationDefragmentation.gif)
 
 ## Demanding page
 메모리 관리 메커니즘(MMU 메커니즘)을 사용해서 여러 프로세스가 시스템의 메모리를 효율적으로 공유할 수 있도록 하는 기술이다. \
 실제로 필요한 Page만 물리 메모리로 가져오는 방식이다. 페이징 테이블을 사용하여 가상 메모리에 대응하는 물리 메모리 주소를 찾아낸다. 
 
 ## Page table
-![](./image/virtual_memory/page_table.png)
+![](../image/virtual_memory/page_table.png)
 프로세스의 virtual address space를 physical memory와 mapping 시켜주는 표이다. 프로세스들은 자신의 고유한 Page table이 있다. \
 Page table은 page table entry로 구성되어 있다. 각 PTE는 해당 entry가 커버하는 virtual address나 physical memory의 상태를 기록하는 형태로 구성되어 있다. 
 
 ### Page table entry
-![](./image/virtual_memory/page_table_entrys.png)
+![](../image/virtual_memory/page_table_entrys.png)
 
 ## Page fault
 프로세스가 어떤 페이지에 처음 접근하거나 swap-out 된 페이지에 접근했을 때, 해당 페이지가 논리적으로는 존재하나 실제 물리 메모리에 로딩되지 않은 경우이다. 
