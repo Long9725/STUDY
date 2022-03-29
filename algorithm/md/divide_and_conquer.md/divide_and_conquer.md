@@ -25,12 +25,12 @@
 
 ### Recurrence for divide and conquer
 
-![](../../image/sorting/divide-and-conquer/recurrence%20divide-and-conquer.png)
+![](../../image/divide-and-conquer/recurrence%20divide-and-conquer.png)
 
 ## Proof
 ### Recursion tree
 T(n)에 대해서 반복되는 트리 구조를 그리는 것
-![](../../image/sorting/divide-and-conquer/recursion-tree.png)
+![](../../image/divide-and-conquer/recursion-tree.png)
 
 ### Telescoping
 망원급수, 부분적 항들의 합이 소거 후에 결과적으로 고정된 값만이 남는 급수를 뜻한다.

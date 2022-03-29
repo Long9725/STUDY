@@ -87,7 +87,7 @@ Divide-and-conquer: θ(nlog n)
 
 따라서 T(n) = θ(1) + 2T(n/2) + θ(n) + θ(1) = 2T(n/2) + θ(n) 이다. (θ(1)는 θ(n)에 의해 무시된다.)
 
-![](../../image/sorting/divide-and-conquer/maximum-subarray.png)
+![](../../image/divide-and-conquer/maximum-subarray.png)
 
 결론적으로 시간복잡도는 θ(nlog n)이다.
 
