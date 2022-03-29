@@ -69,8 +69,13 @@ T(n)에 대해서 반복되는 트리 구조를 그리는 것
 2. c < 1인 몇 개의 상수와 충분히 큰 n에 대해서 f(n)이 a·f(n/b) <= c·f(n)을 만족한다면,
 3. T(n) = θ(f(n))이다.
 
-
-
+### Case 판단
+f(n) = n<sup>log<sub>b</sub>a-ε</sup>이라고 가정하자.
+f(n) = n<sup>log<sub>b</sub>a-ε</sup> = n<sup>log<sub>b</sub>a</sup> · n<sup>-ε</sup>,
+f(n) / n<sup>log<sub>b</sub>a</sup> = n<sup>-ε</sup>
+좌변을 계산하여 우변의 ε > 0인 ε을 도출한다. 필요에 따라 -ε는 +ε로 바뀔 수 있다. \
+만약 지수승 차이가 존재하지 않는다면 master method는 적용할 수 없다.
+ 
 ## References
 > + 2022 봄 알고리즘 수업
 > + wiki 망원급수: https://ko.wikipedia.org/wiki/%EB%A7%9D%EC%9B%90%EA%B8%89%EC%88%98
