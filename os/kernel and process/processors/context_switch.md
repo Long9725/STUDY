@@ -15,6 +15,8 @@ Context switching을 하는 동안 CPU는 프로세스에 관해 아무런 일�
 사용자와 다른 사용자, 사용자와 시스템 또는 디바이스 간 상호작용에 영향을 미치는 사람, 장소, 개채 등의 현재 상태를 규정하는 정보를 의미한다. \
 OS에서의 Context는 해당 프로세스를 실행하기 위한 프로세스의 정보들이다. PCB에 저장된다. 
 
+![](../../image/process/context%20switch.png)
+
 ## Pseudocode
 ```
 context_switch(old, new) {
