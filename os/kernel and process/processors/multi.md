@@ -11,7 +11,6 @@
 
 ![](../../image/process/multiprocessor.png)
 ![](../../image/process/multi-processing.jpg)
-
 이렇게 여러 프로세서에서 하나의 프로그램을 병렬로 실행하여 실행 속도를 극대화시킨다.
 
 ## Multi-programming이란?
