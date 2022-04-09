@@ -18,7 +18,7 @@ int main() {
 }
 
 /*
-X, Y는 문자열, m은 row, n은 col
+X, Y는 문자열, m은 col, n은 row
 */
 void LCS(char* X, char* Y, int m, int n) {
     // print table
