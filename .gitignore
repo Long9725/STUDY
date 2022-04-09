@@ -1,4 +1,5 @@
 # debug result
 .vscode/*
+algorithm/c/dynamic_programming/*.exe
 algorithm/c/divide-and-conquer/*.exe
 algorithm/c/sorting/*.exe

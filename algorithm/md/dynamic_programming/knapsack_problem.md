@@ -1,11 +1,11 @@
 ## 목차
 
-1. [Knapsack problem](#the-longest-common-subsequence)
-2. [Definition](#definition)
-3. [Problem](#problem)
-4. [Naive approach](#naive-approach)
-5. [Four-step method](#four-step-method)
-6. [Pseudocode](#pseudocode)
+1. [Knapsack problem](#knapsack-problem)
+2. [Naive approach](#naive-approach)
+3. [Optimal substructure](#optimal-substructure)
+4. [Recurrence](#recurrence)
+5. [Pseudocode](#pseudocode)
+6. [Table](#table)
 7. [Performance](#performance)
 8. [References](#references)
 
