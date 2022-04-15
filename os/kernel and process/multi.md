@@ -1,10 +1,11 @@
 ## 목차
 
-1. [Multiprocessing이란?](#context-switch란)
-2. [Context란?](#context란)
-3. [Pseudocode](#pseudocode)
-4. [Cost](#cost)
-5. [References](#references)
+1. [Multiprocessing이란?](#multi-processing이란)
+2. [Multi-programming이란?](#multi-programming이란)
+3. [Multi-threading이란?](#multi-threading이란)
+4. [Multicore processor란?](#multicore-processor란)
+5. [Multithreaded multicore system이란?](#multithreaded-multicore-sysyem이란)
+6. [References](#references)
 
 ## Multi-processing이란?
 다수의 프로세서가 서로 협력적으로 일을 처리하는 것을 의미한다. 컴퓨터는 1대이지만 프로세서는 2개 이상이다. 멀티코어시스템을 포함한다. SMP, AMP 등이 있다. 
@@ -21,6 +22,12 @@ OS의 스케줄링에 의해 Task를 번갈아가며 수행하는 것을 의미�
 
 ## Multi-threading이란?
 여러 개의 스레드끼리 자원을 공유하는 것을 뜻한다.
+
+## Multicore processor란?
+하나의 칩에 여러 개의 프로세스 코어가 존재하는 것이다.
+
+## Multithreaded multicore sysyem이란?
+Intel의 HyperThreading 기술로 대표되는 시스템이다. 하나의 코어 안에 2개의 하드웨어 스레드가 존재한다. 이 스레드는 입력 작업에 대해서 다른 하나의 스레드가 memory stall cycle를 진행하는 동안, compute cycle를 진행한다. 따라서 운영체제는 실제 코어의 개수 * 2만큼 코어가 존재한다고 판단한다. 
 
 ### Multi-programming vs Multi-tasking
 멀티 프로그래밍은 프로세서의 자원낭비를 막기 위함이고, 멀티태스킹은 정해진 시간 동안 각각의 task를 번갈아가며 수행하는 것을 의미한다.
