@@ -1,9 +1,7 @@
 ## 목차
 
 1. [Greedy](#dynamic-programming)
-2. [Key ingredients](#key-ingredients)
-3. [Cut and paste](#cut-and-paste)
-4. [References](#references)
+2. [References](#references)
 
 ---
 
