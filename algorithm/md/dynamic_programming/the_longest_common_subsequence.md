@@ -68,7 +68,7 @@ Ex) X = < A, B, C, D, E, F, H, I, J, L > 일 때
 약자로 OPT라고 한다. \
 Z = < z<sub>1</sub>, z<sub>2</sub>, ..., z<sub>k</sub>>가 X, Y의 LCS(Optimal solution)라고 하자.
 
-+ x<sub>m</sub> = y<sub>n</sub>이라면 z<sub>k</sub> = x<sub>m</sub> = y<sub>n-1</sub>이고, z<sub>k-1</sub>은 X<sub>m-1</sub>와 Y<sub>n-1</sub>의 LCS이다.
++ x<sub>m</sub> = y<sub>n</sub>이라면 z<sub>k</sub> = x<sub>m</sub> = y<sub>n</sub>이고, z<sub>k-1</sub>은 X<sub>m-1</sub>와 Y<sub>n-1</sub>의 LCS이다.
 + x<sub>m</sub> != y<sub>n</sub>이고 z<sub>k</sub> != x<sub>m</sub>이면 Z는 X<sub>m-1</sub>와 Y의 LCS이다.
 + x<sub>m</sub> != y<sub>n</sub>이고 z<sub>k</sub> != y<sub>n</sub>이면 Z는 X와 Y<sub>n-1</sub>의 LCS이다.
 
