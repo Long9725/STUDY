@@ -1,8 +1,9 @@
 ## 목차
 
 1. [Dynamic programming](#dynamic-programming)
-2. [Divide and conquer & dynamic programming 비교](#divide-and-conquer--dynamic-programming-비교)
-3. [References](#references)
+2. [Key ingredients](#key-ingredients)
+3. [Cut and paste](#cut-and-paste)
+4. [References](#references)
 
 ---
 
@@ -73,7 +74,7 @@ Z = < z<sub>1</sub>, z<sub>2</sub>, ..., z<sub>k</sub>>가 X, Y의 LCS(Optimal s
     + (Cut) Z는 X<sub>m-1</sub>와 Y의 LCS가 아니다.
     + (Paste) W는 길이가 k보다 긴 X<sub>m-1</sub>와 Y의 LCS이다. x<sub>m</sub> != y<sub>n</sub>이므로 W는 X<sub>m</sub>와 Y<sub>n</sub>의 LCS이 된다.
     + (Contadiction) 하지만 Z는 < z<sub>1</sub>, z<sub>2</sub>, ..., z<sub>k</sub> >이라고 가정했으므로, LCS의 길이에 모순이 생긴다. 따라서 Cut의 가정이 틀렸다.
-    
+
 
 + x<sub>m</sub> != y<sub>n</sub>이고 z<sub>k</sub> != y<sub>n</sub>이면 Z는 X와 Y<sub>n-1</sub>의 LCS이다.
     + (Cut) Z는 X와 Y<sub>n-1</sub>의 LCS가 아니다.

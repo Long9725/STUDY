@@ -1,0 +1,19 @@
+## 목차
+
+1. [Greedy](#dynamic-programming)
+2. [Key ingredients](#key-ingredients)
+3. [Cut and paste](#cut-and-paste)
+4. [References](#references)
+
+---
+
+## Greedy
+최적화를 위해 사용한다. 현재 상황에서 보여지기에 가장 최적화된 선택을 고른다. 선택을 고려할 때, 과거나 미래를 생각하지 않고 현재 상황만을 생각한다. 선택한 값은 해결책이 될 수 있는 후보군의 집합에 저장된다. 최종적으로 선택할 수 있는게 없어질 때까지 한다.\
+이 알고리즘은 항상 최적화된 해결책을 제시하지 않는다. 그러므로 후보군의 집합에 대해서 최적화된 해결책인지를 검증이 필요하다. 
+
++ Selection procedure: 후보군 집합에 선택을 추가한다. 
++ Feasibility check: 후보군 집합이 실제로 만들어질 수 있는 것인지, 계산 가능한 것인지 검증한다. 매 반복에서 검증한다.
++ Solution check: 후보군 집합이 결과적으로 해결책이 될 수 있는지 검증한다.
+
+## References
+> + 2022 봄 알고리즘 수업
