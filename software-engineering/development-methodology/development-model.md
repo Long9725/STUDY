@@ -13,7 +13,7 @@
 공식적인 가이드라인이나 프로세스가 없는 개발 방식이다. 일단 코드를 작성하여 제품을 만들어본 후에 요구 분석, 설계, 유지보수에 대하여 생각한다.
 
 ### 절차
-![](../image/code-and-fix.png)
+![](../image/development-methodology/code-and-fix.png)
 
 1. 첫 번째 버전의 코드를 작성하여 제품을 완성한다.
 2. 작성된 코드에 문제점이 있으면 수정하여 해결한다.
@@ -49,7 +49,7 @@ Waterfall 모델로 유명하다. 선형 순차적 모델, Linear squential 모�
 ## V 모델
 폭포수 모델에 테스트 단계를 추가적으로 확장한 것이다. 폭포수 모델은 산출물 중심인 것에 반해, V 모델은 각 개발 단계를 검증하는 데 초점을 둔다.
 
-![](../image/v-model.png)
+![](../image/development-methodology/v-model.png)
 
 + 단위 테스트: 개별 모듈을 검증한다.
 + 통합 테스트: 모듈 간의 인터페이스를 확인한다.
@@ -72,7 +72,7 @@ Waterfall 모델로 유명하다. 선형 순차적 모델, Linear squential 모�
 4. 사용자는 프로토타입을 평가한다. 추가 및 수정 요구가 생긴다면 1번으로 다시 돌아간다.
 5. 최종 프로토타입을 개발한다.
 
-![](../image/prototype-model.png)
+![](../image/development-methodology/prototype-model.png)
 
 ### 실험적 프로토타입 모델
 개발한 프로토타입을 최종적으로는 폐기하고, 완성품을 만든다. 프로토타입에서 최종 사용자 요구를 도출하면 그때부터 분석 - 설계 - 구현을 진행한다.
@@ -117,13 +117,13 @@ Waterfall 모델로 유명하다. 선형 순차적 모델, Linear squential 모�
 ## 반복적 개발 방법론
 폭포수 모델은 각 단계별로 깔끔하게 정리되어 있지만, 사용자의 요구사항이 많으면 민첩하게 대처할 수 없다. 이러한 문제점을 해결하기 위해 작업을 계속해서 반복 수행하는 방법론이다.
 
-![](../image/recursive-development.png)
+![](../image/development-methodology/recursive-development.png)
 
 <details><summary> 통합 프로세스 </summary>
 
 ## 통합 프로세스
-![](../image/up.png)
-![](../image/up2.png)
+![](../image/development-methodology/up.png)
+![](../image/development-methodology/up2.png)
 
 통합 프로세스 모델은 크게 도입 - 구체화 - 구축 - 전이 4단계로 나뉜다. 각 단계도 여러 개의 작은 단위로 나뉘어 각 반복 구간을 하나씩 정한다. 반복 전에 기준선 계획을 설립한다. 반복 주기가 끝나면 실행 가능한 산출물이 도출되며, 이걸 위험 요소 제거 여부를 판단하는데 사용한다. 반복 구간 하나가 수행될 때 전체 9개의 개발 영역이 대부분 수행된다.
 

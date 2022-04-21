@@ -35,7 +35,7 @@
 </details>
 
 ### 메모리 공간
-![](../../image/process/memory.png)
+![](../image/process/memory.png)
 
 ## 프로세스의 상태
 커널 내의 자료 구조를 통해 프로세스의 상태를 관리한다. 준비 큐, 대기 큐, 실행 큐 등의 자료 구조가 있다.
@@ -45,7 +45,7 @@
 * 대기(waiting) : 보류(block)라고 부르기도 한다. 프로세스가 입출력 완료, 시그널 수신 등 어떤 사건을 기다리고 있는 상태를 말한다.
 * 종료(terminated) : 프로세스의 실행이 종료되었다.
 
-![](../../image/process/process%20state%20transitions.png)
+![](../image/process/process%20state%20transitions.png)
 
 
 ### 프로세스의 상태전이
@@ -73,7 +73,7 @@
 ```
 
 ## 프로세스 생성
-![](../../image/process/process%20hierarchy.jpg)
+![](../image/process/process%20hierarchy.jpg)
 
 부모 프로세스는 자식 프로세스를 생성할 수 있고, 프로세스 계층은 트리 구조를 가진다. 각 프로세스는 process identifier(pid)로 구별 및 관리한다. 여러 가지 옵션이 있다.
 * 자원 공유
@@ -96,7 +96,7 @@
 * Ready Queue: CPU 점유 순서를 기다리는 큐이다.
 * Device Queue: I/O를 하기 위한 여러 장치가 있는데, 각 장치를 기다리는 큐가 존재한다.
 
-![](../../image/process/process%20scheduling.png)
+![](../image/process/process%20scheduling.png)
 
 ## References
 * 2022 봄 운영체제 강의

@@ -10,8 +10,8 @@
 ## Multi-processing이란?
 다수의 프로세서가 서로 협력적으로 일을 처리하는 것을 의미한다. 컴퓨터는 1대이지만 프로세서는 2개 이상이다. 멀티코어시스템을 포함한다. SMP, AMP 등이 있다. 
 
-![](../../image/process/multiprocessor.png)
-![](../../image/process/multi-processing.jpg)
+![](../image/process/multiprocessor.png)
+![](../image/process/multi-processing.jpg)
 이렇게 여러 프로세서에서 하나의 프로그램을 병렬로 실행하여 실행 속도를 극대화시킨다.
 
 ## Multi-programming이란?
