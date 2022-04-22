@@ -5,10 +5,11 @@
 3. [Earliest deadline first scheduling](#earliest-deadline-first-scheduling)
 4. [Proportional Share Scheduling](#proportional-share-scheduling)
 5. [Algorithm evaluation](#algorithm-evaluation)
-6. [References](#references)
+6. [예측](#예측)
+7. [References](#references)
 
 ## Real-Time CPU Scheduling
-1. Event latency - 이벤트가 발생하고 시스템이 응답하기까지의 시간이다.
+1. Event latency - 이벤트가 발생하고 시스템이 응답하기까지의ss 시간이다.
 
 ![](../image/scheduling/realtime/event_latency.jpeg)
 
