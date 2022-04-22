@@ -2,11 +2,7 @@
 
 1. [Synchronization이란?](#synchronization이란)
 2. [Critical section](#critical-section)
-3. [Locks](#locks)
-4. [Semaphores](#semaphores)
-5. [Real-Time CPU Scheduling](#real-time-cpu-scheduling)
-6. [Linux scheduling](#linux-scheduling)
-7. [References](#references)
+3. [References](#references)
 
 ## Synchronization이란?
 공유되는 자원에 대해서 접근 권한을 관리하는 기법이다. Concurrency를 추구하다보면, Threads에서 비결정론적 결과를 발생시키기 때문이다. Concurrency를 저해하기 때문에 성능적인 측면에 영향을 끼친다. 프로그래머가 컨트롤할 수 있는 것이 아니고, OS에서 컨트롤해야하기 때문에 어려운 기법이다.

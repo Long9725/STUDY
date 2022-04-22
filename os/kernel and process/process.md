@@ -12,6 +12,10 @@
 ## 프로세스(Process)란?
 컴퓨터에서 연속적으로 실행되고 있는 컴퓨터 프로그램을 말한다. 종종 스케쥴링의 대상이 되는 작업(task)이라는 용어와 거의 같은 의미로 쓰인다. 프로세스 관리를 잘 하는 것이 OS의 중요한 부분이다.
 
++ CPU context (registers)
++ OS resource (address space, etc.)
++ Other information
+
 ## 프로그램과 프로세스
 프로그램은 일반적으로 하드 디스크 등에 저장되어 있는 실행코드를 뜻한다. 프로세스는 프로그램을 구동하여 프로그램 자체와 프로그램 상태가 메모리 상에서 실행되는 작업 단위를 지칭한다. 프로그램은 하나지만, 해당 프로세스는 여러 개가 될 수 있다.
 
@@ -31,6 +35,8 @@
 * 프로그램 포인터 : 프로그램에 대한 정보를 담은 공간에 대한 포인터이다. 
 * 자원 포인터
 * 실행문맥 : 마지막으로 실행한 프로세서의 레지스터 내용을 담고 있다. 연속적으로 실행된 것처럼 하기 위해 이 레지스터 정보를 가진다.
+
+![](../image/process/pcb.jpeg)
 
 </details>
 
@@ -98,9 +104,32 @@
 
 ![](../image/process/process%20scheduling.png)
 
+
+## Pipe
+표준 Producer-Consumer로 소통하는 것이다. Child process가 자신의 출력을 파이프에 입력으로 넣으면, Parent process는 파이프의 출력을 자신의 입력으로 사용한다.
+
+### dup2
+파일 서술자(File descriptor) 복제 함수이다.
+
+    #include <unistd.h> 
+    int dup2(int oldfd, int newfd); 
+
++ 표준 입력(0), 표준 출력(1), 표준 오류(2)
++ dup2는 newfd 파일 descripter가 이미 open된 파일이면 close하고 oldfd를 newfd로 복사한다. 이때, newfd와 oldfd는 file descripter 번호는 다르지만 똑같이 행동한다. 그러지만 두 file descriptor는 다른 descriptor이므로 하나를 close한다고 해서 함께 close되지 않는다. 
++ parameter 
+    + oldfd : 복사하려는 원본 file descripter
+    + newfd : 복사되는 target file descripter (만약 newfd가 열려진 file descripter이면, 먼저 close후에 복사함) 
+
++ return 
+    + 정상인 경우: -1 이외의 값 
+    + 오류인 경우: -1 , 오류 상세 내용은 errno 전역변수에 저장됨
+
+UNIX에서는 모든 게 파일으로 관리되기 때문에, 입출력을 파일에 할당해준다.
+
 ## References
 * 2022 봄 운영체제 강의
 * wiki - https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4
 * Program / Process / Processor - https://enlqn1010.tistory.com/12
 * 프로세스가 뭐지? - https://bowbowbow.tistory.com/16
 * 프로세스 관리 - https://velog.io/@codemcd/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9COS-5.-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EA%B4%80%EB%A6%AC
+* [IT 개발자 Note] - https://www.it-note.kr/5 
