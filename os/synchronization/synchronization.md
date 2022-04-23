@@ -24,7 +24,7 @@
     + 다른 스레드는 기다려야 한다.
     + 한 스레드가 사용을 다하면 다음 하나의 스레드가 자원을 사용한다.
 + Progress
-    + Critical section에서 수행되고 있는 프로세스가 없을 때, Critical section을 접근하고자 하는 프로세스가 있다면 곧바로 수행시켜야 한다.
+    + Critical section에서 수행되고 있는 프로세스가 없을 때, Critical section을  접근하고자 하는 프로세스가 있다면 곧바로 수행시켜야 한다.
 + Bounded waiting
     + Critical section을 접근하고자 하는 프로세스는 Starvation이 발생하면 안 된다.
 

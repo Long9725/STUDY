@@ -82,7 +82,7 @@ CPU 스케쥴러는 이에 대해서 작업을 좀 더 빠르게 하기 위해�
 이러한 문제를 해결하기 위해서, 과부화된 CPU에서 다른 CPU에게 작업을 밀어 넣거나, 대기 중인 CPU가 다른 CPU의 대기 작업을 가져온다. 이를 Migration이라고 한다.
 
 + Push migration - 과부화된 CPU에서 다른 CPU에게 작업을 밀어넣는다.
-+ Push migration - 대기 중인 CPU에서 다른 바쁜 CPU의 대기 작업을 가져온다.
++ Pull migration - 대기 중인 CPU에서 다른 바쁜 CPU의 대기 작업을 가져온다.
 
 이렇게 하면 Load balance가 지켜진다. Migration을 하는 동안, 어떤 프로세스를 어디로 이동할 것인지는 Work stealing(작업 훔치기, Threads에서도 사용한다.)를 사용한다. 하지만 너무 자주 하면 SQMS에서 있었던 Lock에 의한 오버헤드와 확장 문제가 동일하게 발생한다. 따라서 적절히 조율하는 값을 찾아야 한다.
 

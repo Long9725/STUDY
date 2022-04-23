@@ -33,10 +33,10 @@
 pseudocode: 의사코드, 프로그램을 작성할 때 각 모듈이 작동하는 논리를 표현하기 위한 언어
 
     INSERTION-SORT(A, n)
-        for j <- 2 to n
-            do key <- A[j]
-                i <- j-1
-                while i > 0 and A[i] > key
+        for j <- 2 to n // 두번째 자료부터 시작한다.
+            do key <- A[j] // j번째 자료는 키가 된다.
+                i <- j-1 
+                while i > 0 and A[i] > key // 키 값보다 크면 뒤로 한 칸 미룬다.
                     do A[i+1] <- A[i]
                         i <- i - 1
                 A[i+1] = key
