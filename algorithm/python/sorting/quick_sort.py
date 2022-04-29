@@ -1,4 +1,4 @@
-# https://www.geeksforgeeks.org/quick-sort/
+# https://www.geeksforgeeks.org/quick-sort/z
 # Python3 implementation of QuickSort
 
 
