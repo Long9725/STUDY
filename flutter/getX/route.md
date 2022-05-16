@@ -1,12 +1,11 @@
 ## 목차
 
-1. [애자일 프로세스](#애자일-프로세스)
-2. [Simple state management](#simple-state-management)
-3. [Responsive state management](#responsive-state-management)
-4. [Lifecycle](#lifecycle)
-5. [Find](#find)
+1. [Route](#route)
+2. [Named route](#named-route)
+3. [Arguments 전달](#arguments-전달)
+4. [화면 이동 방법 & 애니메이션](#화면-이동-방법--애니메이션)
+5. [스와이프하여 뒤로가기](#스와이프하여-뒤로가기)
 6. [IsRegistered](#isregistered)
-7. [static get to pattern](#static-get-to-pattern)
 8. [References](#references)
 
 ## Route
@@ -101,6 +100,14 @@ GetX에서는 다음과 같이 이전 화면이 무엇인지 알 수 있다.
 Get.previousRoute
 ~~~
 
+## 클래스 분리 
+Route를 관리하는 폴더를 만든다. 추상 클래스로 route name을 정의하고 page를 관리하는 것이 실수를 줄인다.
+
+~~~dart
+
+~~~
+
 ## References
 * 『프로그래밍 예술가, DeKu』 - https://dev-yakuza.posstree.com/ko/flutter/getx/route/
 * 자동차명 insane_인생 - https://zionh.tistory.com/155
+* leeeeeoy.log - https://velog.io/@leeeeeoy/Flutter-GetXpattern-%EC%9D%B5%ED%98%80%EB%B3%B4%EA%B8%B0
